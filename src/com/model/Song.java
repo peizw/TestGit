@@ -7,6 +7,8 @@ public class Song {
 	private String songPath;//歌曲路径
 	private String songType;//歌曲类型
 	private String songLg;//歌曲语种
+	private int SongTime;//时长
+	private String Special;//专辑
 	public int getSongId() {
 		return songId;
 	}
@@ -42,6 +44,18 @@ public class Song {
 	}
 	public void setSongLg(String songLg) {
 		this.songLg = songLg;
+	}
+	public int getSongTime() {
+		return SongTime;
+	}
+	public void setSongTime(int songTime) {
+		SongTime = songTime;
+	}
+	public String getSpecial() {
+		return Special;
+	}
+	public void setSpecial(String special) {
+		Special = special;
 	}
 	
 	

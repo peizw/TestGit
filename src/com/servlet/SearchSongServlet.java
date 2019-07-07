@@ -36,21 +36,21 @@ public class SearchSongServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String songName = request.getParameter("songName");
+		//String starName = request.getParameter("starName");
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/orcl", "scott", "admin");
 			
-			String sql="select * from Song where 1=1 ";
+			String sql="select s1.* from Song s1,Star s2 where 1=1 and s1.starid=s2.starid ";
 			
 			if(songName!=null && !songName.equals("")){
-				sql+=" and SongName=? ";
+				sql+=" and s1.SongName like '%"+songName+"%'";
 			}
+			/*if(starName!=null && !starName.equals("")){
+				sql+=" union (select s1.*,s2.StarName from Song s1,Star s2 where s1.starid=s2.starid and s2.StarName like '%"+starName+"%') ";
+			}*/
 			
 			PreparedStatement psmt = conn.prepareStatement(sql);
-			
-			if(songName!=null && !songName.equals("")){
-				psmt.setObject(1, songName);
-			}
 			
 			ResultSet rs = psmt.executeQuery();
 			List songs = new ArrayList();

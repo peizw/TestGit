@@ -39,32 +39,37 @@
 					<table class="table">
 						<thead>
 							<tr>
-								<th>歌曲编号</th>
 								<th>歌曲名</th>
-								<th>歌手编号</th>
-								<th>歌曲路径</th>
-								<th>歌曲类型</th>
-								<th>歌曲语种</th>
+								<th>歌手名</th>
+								<th>时长</th>
+								<th>专辑</th>
 							</tr>
 						</thead>
 						<tbody>
 							<%
 							List songs = (List)request.getAttribute("songs");
+							List stars = (List)request.getAttribute("stars");
 							if(songs!=null){
-								for(int i=0;i<songs.size();i++){
-									Song song = (Song)songs.get(i);
+								//for(int i=0;i<songs.size();i++){
+								//	Song song = (Song)songs.get(i);
+								Song song1 = (Song)songs.get(1);
+								Song song2 = (Song)songs.get(6);
+								Song song3 = (Song)songs.get(7);
+								Song song4 = (Song)songs.get(1);
 							%>
 							<tr>
-								<td><%=song.getSongId() %></td>
-								<td><%=song.getSongName() %></td>
-								<td><%=song.getStarId() %></td>
+								<%-- <td><%=song.getSongId() %></td> --%>
+								<td><%=song1.getSongName() %></td>
+								<%-- <td><%=song.getStarId() %></td>
 								<td><%=song.getSongPath() %></td>
 								<td><%=song.getSongType() %></td>
-								<td><%=song.getSongLg() %></td>
+								<td><%=song.getSongLg() %></td> --%>
+								<td><%=song2.getSongTime() %></td>
+								<td><%=song3.getSpecial() %></td>
 							</tr>
 							<%
 									
-								}
+								//}
 							}
 							
 							%>
