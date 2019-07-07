@@ -3,12 +3,12 @@ package com.model;
 public class Song {
 	private int songId;//歌曲编号
 	private String songName;//歌曲名
-	private int starId;//歌手编号
+	private String starName;//歌手名
+	private String special;//专辑
+	private int songTime;//时长
 	private String songPath;//歌曲路径
 	private String songType;//歌曲类型
 	private String songLg;//歌曲语种
-	private int SongTime;//时长
-	private String Special;//专辑
 	public int getSongId() {
 		return songId;
 	}
@@ -20,12 +20,6 @@ public class Song {
 	}
 	public void setSongName(String songName) {
 		this.songName = songName;
-	}
-	public int getStarId() {
-		return starId;
-	}
-	public void setStarId(int starId) {
-		this.starId = starId;
 	}
 	public String getSongPath() {
 		return songPath;
@@ -45,17 +39,23 @@ public class Song {
 	public void setSongLg(String songLg) {
 		this.songLg = songLg;
 	}
-	public int getSongTime() {
-		return SongTime;
-	}
-	public void setSongTime(int songTime) {
-		SongTime = songTime;
-	}
 	public String getSpecial() {
-		return Special;
+		return special;
 	}
 	public void setSpecial(String special) {
-		Special = special;
+		this.special = special;
+	}
+	public int getSongTime() {
+		return songTime;
+	}
+	public void setSongTime(int songTime) {
+		this.songTime = songTime;
+	}
+	public String getStarName() {
+		return starName;
+	}
+	public void setStarName(String starName) {
+		this.starName = starName;
 	}
 	
 	

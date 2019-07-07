@@ -41,10 +41,10 @@ public class SearchSongServlet extends HttpServlet {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/orcl", "scott", "admin");
 			
-			String sql="select s1.* from Song s1,Star s2 where 1=1 and s1.starid=s2.starid ";
+			String sql="select * from Song where 1=1";
 			
 			if(songName!=null && !songName.equals("")){
-				sql+=" and s1.SongName like '%"+songName+"%'";
+				sql+=" and SongName like '%"+songName+"%'";
 			}
 			/*if(starName!=null && !starName.equals("")){
 				sql+=" union (select s1.*,s2.StarName from Song s1,Star s2 where s1.starid=s2.starid and s2.StarName like '%"+starName+"%') ";
@@ -57,15 +57,19 @@ public class SearchSongServlet extends HttpServlet {
 			while(rs.next()){
 				int songId = rs.getInt(1); 
 				String sName = rs.getString(2);
-				int starId = rs.getInt(3);
-				String songPath = rs.getString(4);
-				String songType = rs.getString(5);
-				String songLg = rs.getString(6);
+				String starName = rs.getString(3);
+				String special = rs.getString(4);
+				int songTime = rs.getInt(5);
+				String songPath = rs.getString(6);
+				String songType = rs.getString(7);
+				String songLg = rs.getString(8);
 				
 				Song song = new Song();
 				song.setSongId(songId);
 				song.setSongName(sName);
-				song.setStarId(starId);
+				song.setStarName(starName);
+				song.setSpecial(special);
+				song.setSongTime(songTime);
 				song.setSongPath(songPath);
 				song.setSongType(songType);
 				song.setSongLg(songLg);
