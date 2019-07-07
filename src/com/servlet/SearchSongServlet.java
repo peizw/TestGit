@@ -44,7 +44,7 @@ public class SearchSongServlet extends HttpServlet {
 			String sql="select * from Song where 1=1";
 			
 			if(songName!=null && !songName.equals("")){
-				sql+=" and SongName like '%"+songName+"%'";
+				sql+=" and SongName like '%"+songName+"%' union all (select * from Song where StarName like '%"+songName+"%')";
 			}
 			/*if(starName!=null && !starName.equals("")){
 				sql+=" union (select s1.*,s2.StarName from Song s1,Star s2 where s1.starid=s2.starid and s2.StarName like '%"+starName+"%') ";
@@ -57,7 +57,7 @@ public class SearchSongServlet extends HttpServlet {
 			while(rs.next()){
 				int songId = rs.getInt(1); 
 				String sName = rs.getString(2);
-				String starName = rs.getString(3);
+				String starname = rs.getString(3);
 				String special = rs.getString(4);
 				int songTime = rs.getInt(5);
 				String songPath = rs.getString(6);
@@ -67,7 +67,7 @@ public class SearchSongServlet extends HttpServlet {
 				Song song = new Song();
 				song.setSongId(songId);
 				song.setSongName(sName);
-				song.setStarName(starName);
+				song.setStarName(starname);
 				song.setSpecial(special);
 				song.setSongTime(songTime);
 				song.setSongPath(songPath);

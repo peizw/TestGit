@@ -29,7 +29,7 @@
 							</ul>
 							<form action="searchSong" class="navbar-form navbar-left" role="search">
 								<div class="form-group">
-									<input type="text" class="form-control" name="songName" />
+									<input type="text" class="form-control" placeholder="歌名/歌手" name="songName" />
 								</div> <button type="submit" class="btn btn-default">Submit</button>
 							</form>
 							
@@ -49,7 +49,7 @@
 							<%
 							List songs = (List)request.getAttribute("songs");
 							if(songs!=null){
-								for(int i=1;i<=4;i++){
+								for(int i=0;i<songs.size();i++){
 									Song song = (Song)songs.get(i);
 							%>
 							<tr>
