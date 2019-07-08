@@ -1,0 +1,98 @@
+@CHARSET "UTF-8";
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	position: relative;
+}
+.new{
+	width:730px;
+	height:300px;
+	position:absolute ;
+	left: 425px;
+	top: 150px;
+}
+.new .new-song{
+	width:730px;
+	height:360px;
+	float:left;
+	/*background-color: gray;*/
+}
+.new .new-song ul{
+	list-style-type: none;
+}
+.new .new-song li{
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #555;
+	line-height: 40px;
+	border-bottom: solid 1px #f0f0f0;
+}
+.new .new-song li:hover{
+	background-color: #EEEEEE;
+	cursor:pointer;
+}
+.new .new-song li .name:hover,font:hover{
+	color: dodgerblue;
+}
+.new .new-song li a{
+	text-decoration: none;
+	color: #555;
+}
+.a{
+	position: relative;
+}
+.name-start{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 1px;
+	left: -100px;
+	
+	
+}
+.name-stop{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: -2px;
+	left: -58px;
+}
+.b{
+    position: relative;	
+}
+.name-download{
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: -5px;
+	left: -26px;
+}
+.all-button{
+	width:90px;
+	height:34px;
+	background-color: #1E90FF;
+	cursor:pointer;
+	border: none;
+	color: white;
+}
+.all-button:hover{
+	background-color: #1E66FF;
+}
+#all{
+	color: #777777;
+}
+
+.num{
+	margin-right: 10px;
+	color: #999999;
+	min-width: 15px;
+	width: auto!important;
+	padding-left: 5px;
+}
+.num strong{
+	font-size: 18px;
+	color: #fe2c62;
+	font-weight: 400;
+}
