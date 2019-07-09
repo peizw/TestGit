@@ -120,54 +120,67 @@
         <a class = "logo">久畅音乐</a>
         <a class="pg_dl" id="i77">注册</a>    
     </div>
-    <form name="tijiao" method="post" onsubmit="return check()" action="winford.top">
+    <form action="adduser" name="tijiao" method="post" onsubmit="return check()" action="winford.top">
         <div class="left"></div>
         <div class="pg_body">
+        
+        
+        
                 <div class="menu">用户名:</div>
                     <div class="kong">
-                        <input id="text1" type="text" name="01" placeholder="请输入用户名" onblur="check()"><span id="div1" class="tian" style="margin-top: 4px">*(为必填)<span>
+                        <input name=username id="username" type="text" name="01" placeholder="请输入用户名" onblur="check()"><span id="div1" class="tian" style="margin-top: 4px">*(为必填)<span>
                     </div>
+                    
+                    
                 <div class="menu">姓名:</div>
                     <div class="kong">
-                        <input id="i2" type="text" name="01">
+                        <input id="nname" type="text" name="nname">
                     </div>
+                    
                 <div class="menu">性别:</div>
                     <div class="kong" style="width:200px;">
-                         <input type="radio" name="gender" value="1">男
+                         <input type="radio" name="usergender" value="1">男
+                         
                          &nbsp;&nbsp;&nbsp;
                      
-                         <input type="radio" name="gender" value="2">女
+                         <input type="radio" name="usergender" value="2">女
                     </div>
+                    
+                    
                 <div class="menu">密码:</div>
                     <div class="kong">
-                        <input id="text2" type="password" name="02" onblur="check()">
+                        <input id="userpassword" type="password" name="userpassword" onblur="check()">
                         <span id="div2" class="tian" style="margin-top: -25px">*(为必填)<span>
                     </div>
+                    
                 <div class="menu">确认密码:</div>
                     <div class="kong">
-                        <input id="text3" type="password" name="01" onblur="check()">
+                        <input id="text3" type="password" name="" onblur="check()">
                         <span id="div3" class="tian">*(为必填)<span>
                     </div>
+                    
+                    
                 <div class="menu">电话号码:</div>
                     <div class="kong">
-                        <input id="i5" type="text" name="01">
+                        <input id="phone" type="text" name="phnoe">
                     </div>
+                    
+                    
+                    
                 <div class="menu">邮箱地址:</div>
                     <div class="kong">
-                        <input id="text4" type="text" name="01" onblur="check()">
+                        <input id="useremail" type="text" name="useremail" onblur="check()">
                         <span id="div4" class="tian">*(为必填)<span>
                     </div>
+                    
+                    
+                    
                 <div class="menu">头像上传:    </div>
                     <div class="kong">
                         <input type="file" name="file" value="选择头像" accept="image/*">
                 </div>    
                         
-                <div class="menu">个性签名:</div>
-                <div class="kong">
-                    <textarea name="meno" style="width: 280px;height: 40px;">
-                    
-                    </textarea>
-                </div>
+
         </div>
         <div class="can">
             <input id="i111" type="submit" name="002" value="注  册">
@@ -176,6 +189,9 @@
 
         </div>
     </form>
+    
+    
+    
     <script type="text/javascript">
             //刷新or取消
             document.getElementById('i77').onclick = function(){
@@ -189,13 +205,13 @@
             function checkname(){ 
                 var div = document.getElementById("div1"); 
                 div.innerHTML = ""; 
-                var name1 = document.tijiao.text1.value; 
+                var name1 = document.tijiao.username.value; 
                 if (name1 == "") { 
                 div.innerHTML = "用户名不能为空！"; 
-                document.tijiao.text1.focus(); 
+                document.tijiao.username.focus(); 
                 return false; 
             } 
-                if (name1.length < 4 || name1.length > 16) { 
+                if (name1.length < 2 || name1.length > 16) { 
                 div.innerHTML = "长度4-16个字符"; 
                 document.tijiao.text1.select(); 
                 return false; 
@@ -216,15 +232,15 @@
             function checkpassword(){ 
                 var div = document.getElementById("div2"); 
                 div.innerHTML = ""; 
-                var password = document.tijiao.text2.value; 
+                var password = document.tijiao.userpassword.value; 
                 if (password == "") { 
                 div.innerHTML = "密码不能为空"; 
-                document.tijao.text2.focus(); 
+                document.tijao.userpassword.focus(); 
                 return false; 
             } 
                 if (password.length < 4 || password.length > 16) { 
                 div.innerHTML = "密码长度为4-16位"; 
-                document.tijiao.text2.select(); 
+                document.tijiao.userpassword.select(); 
                 return false; 
                 } 
                 return true; 
@@ -233,7 +249,7 @@
             function checkrepassword(){ 
                 var div = document.getElementById("div3"); 
                 div.innerHTML = ""; 
-                var password = document.tijiao.text2.value; 
+                var password = document.tijiao.userpassword.value; 
                 var repass = document.tijiao.text3.value; 
                 if (repass == "") { 
                 div.innerHTML = "密码不能为空"; 
@@ -252,37 +268,37 @@
         function checkEmail(){ 
             var div = document.getElementById("div4"); 
             div.innerHTML = ""; 
-            var email = document.tijiao.text5.value; 
+            var email = document.tijiao.useremail.value; 
             var sw = email.indexOf("@", 0); 
             var sw1 = email.indexOf(".", 0); 
             var tt = sw1 - sw; 
             if (email.length == 0) { 
             div.innerHTML = "邮箱不能为空"; 
-            document.tijiao.text5.focus(); 
+            document.tijiao.email.focus(); 
             return false; 
         } 
 
             if (email.indexOf("@", 0) == -1) { 
             div.innerHTML = "必须包含@符号"; 
-            document.tijiao.text5.select(); 
+            document.tijiao.email.select(); 
             return false; 
         } 
 
             if (email.indexOf(".", 0) == -1) { 
             div.innerHTML = "必须包含.符号"; 
-            document.tijiao.text5.select(); 
+            document.tijiao.email.select(); 
             return false; 
         } 
 
             if (tt == 1) { 
             div.innerHTML = "@和.不能一起"; 
-            document.tijiao.text5.select(); 
+            document.tijiao.email.select(); 
             return false; 
         }
 
             if (sw > sw1) { 
             div.innerHTML  = "@符号必须在.之前"; 
-            document.tijiao.text5.select(); 
+            document.tijiao.email.select(); 
             return false; 
         } 
             else { 
