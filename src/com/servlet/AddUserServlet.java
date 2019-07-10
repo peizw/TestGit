@@ -31,6 +31,7 @@ public class AddUserServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
+			request.setCharacterEncoding("utf-8");
 			String username = request.getParameter("username");
 			String nname = request.getParameter("nname");
 			String usergender = request.getParameter("usergender");

@@ -162,7 +162,7 @@
                     
                 <div class="menu">电话号码:</div>
                     <div class="kong">
-                        <input id="phone" type="text" name="phnoe">
+                        <input id="phone" type="text" name="phone">
                     </div>
                     
                     
