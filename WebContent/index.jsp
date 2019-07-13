@@ -40,7 +40,7 @@
 			<div class="banner_agile_top">
 				<div class="w3_agile_header">
 					<div class="w3_agileits_logo">
-						<h1><a href="index.html">Musicality <span>Sounds made by voices </span></a></h1>
+						<h1><a href="index.html">久畅音乐 <span>Sounds made by voices </span></a></h1>
 					</div>
 					<div class="w3_menu">
 
@@ -110,7 +110,7 @@
 				<h3 class="wthree_head">歌单推荐 <span>好东西就要在一起整整齐齐</span></h3>
 				<div class="w3l_gallery_grids">
 					<div class="col-md-6 banner_bottom_left">
-						<h3>欢迎来到久唱音乐</h3>
+						<h3>欢迎来到久畅音乐</h3>
 						<br>
 						<br>
 
