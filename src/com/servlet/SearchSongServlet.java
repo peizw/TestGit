@@ -53,7 +53,8 @@ public class SearchSongServlet extends HttpServlet {
 			PreparedStatement psmt = conn.prepareStatement(sql);
 			
 			ResultSet rs = psmt.executeQuery();
-			List songs = new ArrayList();
+			List<Song> songs = new ArrayList<>();
+			
 			while(rs.next()){
 				int songId = rs.getInt(1); 
 				String sName = rs.getString(2);
@@ -75,6 +76,8 @@ public class SearchSongServlet extends HttpServlet {
 				song.setSongLg(songLg);
 				songs.add(song);
 			}
+			
+			
 			
 			request.setAttribute("songs", songs);
 			request.getRequestDispatcher("song.jsp").forward(request, response);
