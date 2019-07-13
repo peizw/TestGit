@@ -5,38 +5,80 @@
 }
 body{
 	position: relative;
+	/*background-color: #00BDBD;*/
 }
+
+.side{
+	width: 200px;
+	height: 500px;
+	margin-left:20px ;
+	padding-left:100px ;
+	/*border: solid 1px gainsboro;*/
+	/*background-color: aquamarine;*/
+}
+
 .new{
 	width:730px;
 	height:300px;
-	position:absolute ;
+	
+	position:absolute;
 	left: 425px;
 	top: 150px;
+	
 }
-.new .new-song{
+
+.new-play{
+	width:200px;
+	height:200px;
+	line-height:200px;
+	font-size:30px;
+	font-family:"楷体";
+}
+
+.new-list{
+	width: 200px;
+	height: 500px;
+	float: left;
+}
+.new-list ul{
+	list-style-type: none;
+}
+.new-list li{
+	/*padding-left: 20px;
+	padding-right: 20px;*/
+	color: #555555;
+	line-height: 40px;
+}
+.new-list li:hover{
+	background-color: #EEEEEE;
+	cursor:pointer;
+}
+.new-song{
 	width:730px;
 	height:360px;
 	float:left;
-	/*background-color: gray;*/
 }
-.new .new-song ul{
+
+.new-song ul{
 	list-style-type: none;
+	
 }
-.new .new-song li{
+.new-song li{
 	padding-left: 20px;
 	padding-right: 20px;
 	color: #555;
 	line-height: 40px;
-	border-bottom: solid 1px #f0f0f0;
+	border-bottom:solid 1px #F0F0F0;
 }
-.new .new-song li:hover{
+
+.new-song li:hover{
 	background-color: #EEEEEE;
 	cursor:pointer;
 }
-.new .new-song li .name:hover,font:hover{
+.new-song li .name:hover,font:hover{
 	color: dodgerblue;
 }
-.new .new-song li a{
+.new-song li a{
 	text-decoration: none;
 	color: #555;
 }
@@ -48,17 +90,17 @@ body{
 	height: 25px;
 	position: absolute;
 	top: 1px;
-	left: -100px;
+	left: -58px;
 	
 	
 }
-.name-stop{
+/* .name-stop{
 	width: 30px;
 	height: 30px;
 	position: absolute;
 	top: -2px;
 	left: -58px;
-}
+} */
 .b{
     position: relative;	
 }
@@ -68,6 +110,18 @@ body{
 	position: absolute;
 	top: -5px;
 	left: -26px;
+}
+/*底部*/
+.ctrl{
+	width: 100%;
+	height: 50px;
+	background-color: #00FFFF;
+	position: fixed;
+	bottom: 0;
+}
+.ctrl-btn{
+	width: 50px;
+	height: 50px;
 }
 .all-button{
 	width:90px;
@@ -80,16 +134,10 @@ body{
 .all-button:hover{
 	background-color: #1E66FF;
 }
-#all{
-	color: #777777;
-}
-
 .num{
-	margin-right: 10px;
-	color: #999999;
-	min-width: 15px;
-	width: auto!important;
-	padding-left: 5px;
+	margin-right:10px;
+	padding-left:5px;
+	color:#999999;
 }
 .num strong{
 	font-size: 18px;

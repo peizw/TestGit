@@ -110,7 +110,7 @@
 				<h3 class="wthree_head">歌单推荐 <span>好东西就要在一起整整齐齐</span></h3>
 				<div class="w3l_gallery_grids">
 					<div class="col-md-6 banner_bottom_left">
-						<h3>欢迎来到久唱音乐</h3>
+						<h3>欢迎来到久畅音乐</h3>
 						<br>
 						<br>
 
