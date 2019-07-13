@@ -5,7 +5,7 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
+		<title>抖音热歌榜</title>
 		<link rel="stylesheet" href="soaring.css" />
 		<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
 	</head>
@@ -38,105 +38,120 @@
 								<span class="num"><strong>1</strong></span>
 								<span class="name">薛之谦 - 像风一样</span>
 								<span style="float: right;"><a class="a" href="#"><img class="name-start" src="img/start.png" alt="" /><!-- <img class="name-stop" src="img/stop.png"/> -->
-								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/像风一样.mp3"><img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>4:07</font></span>
+								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/像风一样.mp3">
+								<img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>4:15</font></span>
 							</li>
 							<li>
 								<input type="checkbox" name="choice" class="checknum"  onclick="setAll()" checked>
 								<span class="num"><strong>2</strong></span>
 								<span class="name">薛之谦 - 演员</span>
 								<span style="float: right;"><a class="a" href="#"><img class="name-start" src="img/start.png" alt="" /><!-- <img class="name-stop" src="img/stop.png"/> -->
-								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/演员.mp3"><img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>4:45</font></span>
+								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/演员.mp3">
+								<img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>4:21</font></span>
 							</li>
 							<li>
 								<input type="checkbox" name="choice" class="checknum"  onclick="setAll()" checked>
 								<span class="num"><strong>3</strong></span>
 								<span class="name">薛之谦 - 一半</span>
 								<span style="float: right;"><a class="a" href="#"><img class="name-start" src="img/start.png" alt="" /><!-- <img class="name-stop" src="img/stop.png"/> -->
-								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/一半.mp3"><img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>4:12</font></span>
+								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/一半.mp3">
+								<img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>4:46</font></span>
 							</li>
 							<li>
 								<input type="checkbox" name="choice" class="checknum"  onclick="setAll()" checked>
 								<span class="num">4</span>
 								<span class="name">G.E.M.邓紫棋 - 来自天堂的魔鬼</span>
 								<span style="float: right;"><a class="a" href="#"><img class="name-start" src="img/start.png" alt="" /><!-- <img class="name-stop" src="img/stop.png"/> -->
-								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/来自天堂的魔鬼.mp3"><img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>3:57</font></span>
+								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/来自天堂的魔鬼.mp3">
+								<img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>4:19</font></span>
 							</li>
 							<li>
 								<input type="checkbox" name="choice" class="checknum"  onclick="setAll()" checked>
 								<span class="num">5</span>
 								<span class="name">G.E.M.邓紫棋 - 倒数(Live)</span>
 								<span style="float: right;"><a class="a" href="#"><img class="name-start" src="img/start.png" alt="" /><!-- <img class="name-stop" src="img/stop.png"/> -->
-								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/倒数(Live).mp3"><img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>4:30</font></span>
+								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/倒数(Live).mp3">
+								<img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>3:47</font></span>
 							</li>
 							<li>
 								<input type="checkbox" name="choice" class="checknum"  onclick="setAll()" checked>
 								<span class="num">6</span>
 								<span class="name">G.E.M.邓紫棋 - 囚鸟(单曲版)</span>
 								<span style="float: right;"><a class="a" href="#"><img class="name-start" src="img/start.png" alt="" /><!-- <img class="name-stop" src="img/stop.png"/> -->
-								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/囚鸟(单曲版).mp3"><img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>3:01</font></span>
+								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/囚鸟(单曲版).mp3">
+								<img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>4:41</font></span>
 							</li>
 							<li>
 								<input type="checkbox" name="choice" class="checknum"  onclick="setAll()" checked>
 								<span class="num">7</span>
 								<span class="name">陈雪凝 - Journey to the peace(Demo)</span>
 								<span style="float: right;"><a class="a" href="#"><img class="name-start" src="img/start.png" alt="" /><!-- <img class="name-stop" src="img/stop.png"/> -->
-								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/Journey to the peace(Demo).mp3"><img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>4:33</font></span>
+								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/Journey to the peace(Demo).mp3">
+								<img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>3:37</font></span>
 							</li>
 							<li>
 								<input type="checkbox" name="choice" class="checknum"  onclick="setAll()" checked>
 								<span class="num">8</span>
 								<span class="name">陈雪凝 - 白羊 (Live)</span>
 								<span style="float: right;"><a class="a" href="#"><img class="name-start" src="img/start.png" alt="" /><!-- <img class="name-stop" src="img/stop.png"/> -->
-								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/白羊 (Live).mp3"><img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>3:54</font></span>
+								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/白羊 (Live).mp3">
+								<img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>0:25</font></span>
 							</li>
 							<li>
 								<input type="checkbox" name="choice" class="checknum"  onclick="setAll()" checked>
 								<span class="num">9</span>
 								<span class="name">张碧晨- 后会无期</span>
 								<span style="float: right;"><a class="a" href="#"><img class="name-start" src="img/start.png" alt="" /><!-- <img class="name-stop" src="img/stop.png"/> -->
-								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/后会无期.mp3"><img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>1:48</font></span>
+								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/后会无期.mp3">
+								<img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>3:22</font></span>
 							</li>
 							<li>
 								<input type="checkbox" name="choice" class="checknum"  onclick="setAll()" checked>
 								<span class="num">10</span>
-								<span class="name">陈雪凝 - 病变 (Live)</span>
+								<span class="name">陈雪凝 - 避脸</span>
 								<span style="float: right;"><a class="a" href="#"><img class="name-start" src="img/start.png" alt="" /><!-- <img class="name-stop" src="img/stop.png"/> -->
-								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/病变 (Live).mp3"><img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>3:42</font></span>
+								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/避脸.mp3">
+								<img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>5:53</font></span>
 							</li>
 							<li>
 								<input type="checkbox" name="choice" class="checknum"  onclick="setAll()" checked>
 								<span class="num">11</span>
 								<span class="name">陈雪凝 - 爱的魔法 (Live)</span>
 								<span style="float: right;"><a class="a" href="#"><img class="name-start" src="img/start.png" alt="" /><!-- <img class="name-stop" src="img/stop.png"/> -->
-								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/爱的魔法 (Live).mp3"><img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>4:27</font></span>
+								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/爱的魔法 (Live).mp3">
+								<img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>0:22</font></span>
 							</li>
 							<li>
 								<input type="checkbox" name="choice" class="checknum"  onclick="setAll()" checked>
 								<span class="num">12</span>
 								<span class="name">张碧晨 - 一吻之间</span>
 								<span style="float: right;"><a class="a" href="#"><img class="name-start" src="img/start.png" alt="" /><!-- <img class="name-stop" src="img/stop.png"/> -->
-								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/一吻之间.mp3"><img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>4:43</font></span>
+								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/一吻之间.mp3">
+								<img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>4:08</font></span>
 							</li>
 							<li>
 								<input type="checkbox" name="choice" class="checknum"  onclick="setAll()" checked>
 								<span class="num">13</span>
 								<span class="name">陈雪凝 - 东西+只对你有感觉 (Live)</span>
 								<span style="float: right;"><a class="a" href="#"><img class="name-start" src="img/start.png" alt="" /><!-- <img class="name-stop" src="img/stop.png"/> -->
-								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/东西+只对你有感觉 (Live).mp3"><img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>3:36</font></span>
+								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/东西+只对你有感觉 (Live).mp3">
+								<img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>0:37</font></span>
 							</li>
 							<li>
 								<input type="checkbox" name="choice" class="checknum"  onclick="setAll()" checked>
 								<span class="num">14</span>
 								<span class="name">张杰,张碧晨 - 三生三世(Live)</span>
 								<span style="float: right;"><a class="a" href="#"><img class="name-start" src="img/start.png" alt="" /><!-- <img class="name-stop" src="img/stop.png"/> -->
-								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/三生三世(Live).mp3"><img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>4:30</font></span>
+								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/三生三世(Live).mp3">
+								<img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>4:09</font></span>
 							</li>
 							<li>
 								<input type="checkbox" name="choice" class="checknum"  onclick="setAll()" checked>
 								<span class="num">15</span>
 								<span class="name">陈雪凝 - 口是心非+Lover Boy 88+一笑倾城 (Live)</span>
 								<span style="float: right;"><a class="a" href="#"><img class="name-start" src="img/start.png" alt="" /><!-- <img class="name-stop" src="img/stop.png"/> -->
-								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/口是心非+Lover Boy 88+一笑倾城 (Live).mp3"><img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>4:03</font></span>
+								</a>&nbsp;&nbsp;<a class="b" href="download?songpath=E:/testGit/TestGit/WebContent/music/口是心非+Lover Boy 88+一笑倾城 (Live).mp3">
+								<img class="name-download" src="img/download.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<font>0:45</font></span>
 							</li>
 						</ul>
 					</div>
